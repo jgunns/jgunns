@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @jgunns
 - 👀 I’m interested in software dev.
-- 🌱 I’m currently learning python, javascript, html5, css and various linux flavors.
+- 🌱 I’m currently learning Unity, C#, python, javascript, sql, html5, css and various linux flavors.
 - 💞️ I’m looking to collaborate on anything useful.  
 - 📫 How to reach me guntherjw50+gh@gmail.com
 
