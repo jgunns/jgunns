@@ -58,3 +58,5 @@ This variable index will be set to 0 initially, then is increased by 1 after eac
 
 We implement a while loop that checks if each row read from plates.txt is equal to 7 bits.
 This while loop will continue until it reads a line that is not equal to 7 bits in size, which in our case, would be an empty line.
+
+fread is given the array buffer, to store each character in as it is read 1 bit at a time for 7 bits of data.
