@@ -1,12 +1,13 @@
-license.c  week 4 practice harvard cs50 
+license.c  week 4 practice harvard cs50. 
 
-Background Info: You have a text file (plates.txt) with 8 strings.  
+Background Info.
+You have a text file (plates.txt) with 8 strings.  
 Each string contains 6 characters of a license plate.
 Each of the 8 strings is on its own line in the text file.
-ex. 
-PLATE1
-PLATE2
-PLATE3 ...
+examples. 
+XRZ123
+DKY345
+and so on.
 
 Our task is to read each of these strings from plates.txt, and print them to the screen.
 
@@ -53,4 +54,7 @@ The name of that pointer is infile.
 We then use f open on the argument assigned to argv[1] which holds the value equal to the name of the file we are opening to read from, we called plates.txt.
 
 Since we have a 2 dimensional array that we need to read from, we create an index variable.
-This variable indx will be set to 0 initially, then is increased by 1 after each row is completed.
+This variable index will be set to 0 initially, then is increased by 1 after each row is completed.
+
+We implement a while loop that checks if each row read from plates.txt is equal to 7 bits.
+This while loop will continue until it reads a line that is not equal to 7 bits in size, which in our case, would be an empty line.
