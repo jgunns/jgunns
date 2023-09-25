@@ -1,0 +1,56 @@
+license.c  week 4 practice harvard cs50 
+
+Background Info: You have a text file (plates.txt) with 8 strings.  
+Each string contains 6 characters of a license plate.
+Each of the 8 strings is on its own line in the text file.
+ex. 
+PLATE1
+PLATE2
+PLATE3 ...
+
+Our task is to read each of these strings from plates.txt, and print them to the screen.
+
+The program takes 2 arguments to run, the first argument being it's name, and the second argument being the name of the file to read from.
+
+int main(argc, char *argv[])
+
+First there is a count check to make sure there are exactly 2 arguments used at runtime.
+If there are not 2 arguments used, the program advises proper use directions and stops.
+
+Since each string is 6 chars long, we need to create an array of chars variable to hold 7 values.
+This is because we need a 7th value to hold the termination character for the string.
+
+Remember when we initialize an array we are defining its size.
+So myArray[7] will hold myArray[0] to myArray[6].  
+
+myArray[7] is not an actual position/element in the array.
+
+Looking at the plates.txt file, try and organize the data in terms of a single character in a grid or matrix.
+
+You should physically see 6 columns and 8 rows.  A column for each character in the plate value.
+A row for each plate.
+
+We also need to know that after that 6th column is an invisible column that is ending the line.
+Each plate is actually ending with the invisible character '/n' for a new line.
+
+So now we see there are really 7 columns if we count that invisible new line character.
+
+Giving us a grid or matrix of 8 rows and 7  columns.
+
+We work with data one row at a time, then go to the next column and work with the next row of data.
+
+The file  we are reading the data from already has a structure.
+
+We need to create a similar structure and can do so using a 2 dimensional array of characters
+
+char plates[8][7];
+
+Next we open a file to read from using: FILE *infile = fopen(argv[1], "r");
+
+Which basically reads use the FILE structure, and then create a pointer to our input file.
+The name of that pointer is infile.
+
+We then use f open on the argument assigned to argv[1] which holds the value equal to the name of the file we are opening to read from, we called plates.txt.
+
+Since we have a 2 dimensional array that we need to read from, we create an index variable.
+This variable indx will be set to 0 initially, then is increased by 1 after each row is completed.
