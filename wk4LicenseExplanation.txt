@@ -59,4 +59,9 @@ This variable index will be set to 0 initially, then is increased by 1 after eac
 We implement a while loop that checks if each row read from plates.txt is equal to 7 bits.
 This while loop will continue until it reads a line that is not equal to 7 bits in size, which in our case, would be an empty line.
 
-fread is given the array buffer, to store each character in as it is read 1 bit at a time for 7 bits of data.
+fread is given the array buffer to store each character in as it is read 1 bit at a time for 7 bits of data.
+
+We also use the while loop to replace the default backslash n to a backslash 0.
+This is because we will be displaying it as a string, 
+if we were to keep the current value of backslash n inside the 6th bit of our buffer array, 
+it would not be giving printf what it needs and it would keep looking for a backslash 0 printing random value until it found backslash 0. 
