@@ -63,5 +63,10 @@ fread is given the array buffer to store each character in as it is read 1 bit a
 
 We also use the while loop to replace the default backslash n to a backslash 0.
 This is because we will be displaying it as a string, 
-if we were to keep the current value of backslash n inside the 6th bit of our buffer array, 
-it would not be giving printf what it needs and it would keep looking for a backslash 0 printing random value until it found backslash 0. 
+if we were to keep the current value of backslash n, the code for a newline inside the 6th bit of our buffer array, 
+it would not be giving printf what it needs to function properly, printf would keep looking for a backslash 0, printing random values until it found backslash 0. 
+
+Now we need a for loop to iterate over our plates 2 dimensional array.
+We know each line is going to be 7 bits long, and each bit is going to hold a char value we want to add to our buffer array.
+
+
