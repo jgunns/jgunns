@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @jgunns
-- 👀 I’m interested in software dev.
-- 🌱 I’m currently learning Unity, C#, python, javascript, sql, html5, css and various linux flavors.
-- 💞️ I’m looking to collaborate on anything useful.  
+- 👀 I’m interested in learning ways to improve how A.I. is used in a spectrum of settings.
+- 🌱 I’m currently testing AutoGen, CrewAI, MemGPT with a focus on Local LLM's
+- 💞️ I’m a creative and enjoy finding solutions which improve on current models of applications while exploring possible promising paths.
 - 📫 How to reach me guntherjw50+gh@gmail.com
 
 <!---
